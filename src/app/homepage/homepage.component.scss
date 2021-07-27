@@ -1,0 +1,38 @@
+.bgColor{
+    background-color: lightgrey;
+}
+
+.l-year{
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin: 0px 30px;
+}
+
+.btn-success{
+    margin: 5px 0px;
+    width: 100%;
+}
+//.leftNav{
+//     left: 10px;
+// }
+
+.tAlign{
+    text-align: center;
+}
+.container {
+    max-width:100%;
+}
+
+@media only screen and (min-width:300px) and (max-width:800px){
+    .btn-success{
+    margin: 5px 0px;
+    width: 50%;
+}
+}
+
+.btn-success:focus{
+  color: #ffffff; 
+  background-color: #161617; 
+  border-color: #494F57;
+}
+

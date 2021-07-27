@@ -1,0 +1,23 @@
+<ng-contianer *ngIf="data">
+    <div class="row">
+        <div class="col-sm-6 col-md-3 card-deck" *ngFor="let cardData of data">
+            <div class="card">
+                <img class="card-img-top" src="{{cardData.links.mission_patch}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title cardContentColor">{{cardData.mission_name}} #{{cardData.flight_number}}</h5>
+                    <h6>Mission Ids:</h6>
+                    <ul *ngFor="let missionId of cardData.mission_id">
+                        <li class="cardContentColor">{{missionId}}</li>
+                    </ul>
+
+                    <h6>Launch Year: &nbsp;<span class="cardContentColor">{{cardData.launch_year}}</span></h6>
+                    <h6>Successfully Launch: &nbsp;<span class="cardContentColor">{{cardData.launch_success}}</span>
+                    </h6>
+                    <h6>Successfully Landing: &nbsp;<span class="cardContentColor">{{cardData.rocket.first_stage.cores[0].land_success}}</span>
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</ng-contianer>
